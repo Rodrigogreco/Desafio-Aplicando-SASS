@@ -1,0 +1,217 @@
+/*comentario en sass y en css*/
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: black; }
+  body header {
+    width: 100%;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    letter-spacing: 0.2em;
+    justify-content: space-between;
+    padding: 16px; }
+
+/*Empieza Seccion Header del Index*/
+.barra-navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%; }
+  .barra-navegacion .nav-right-section {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 40px;
+    align-items: center;
+    width: 100%; }
+  .barra-navegacion li {
+    display: flex; }
+
+.lm1 {
+  border-radius: 60px;
+  background-color: #6487c2;
+  font-size: small; }
+
+.nav-right-section > *:hover {
+  border-bottom: 1px solid #306c70; }
+
+.nav-right-section > * {
+  transition-property: all;
+  transition-duration: 1s; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.img {
+  height: 130px;
+  border-radius: 10px; }
+
+/*Fin Seccion Header del Index*/
+/*Empieza Seccion Bienvenidos a Clinica Index*/
+.section-index {
+  display: flex;
+  justify-content: center;
+  font-size: x-large; }
+  .section-index .bienvenidos {
+    /* Sirve para que se agrande o achique la letra segun la pantalla que tenemos, es bien responsive. */
+    font-size: clamp(12px, 3vw, 20px);
+    transition-property: all;
+    transition-duration: 2s; }
+  .section-index .bienvenidos:hover {
+    transform: scale(1.5); }
+
+/* Fin Seccion Bienvenidos a Clinica index */
+/*Inicio seccion Main en Index*/
+main {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  padding: 16px; }
+  main .main-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center; }
+  main .carousel-container {
+    width: 60%;
+    display: flex;
+    justify-content: center; }
+  main .aside-placeholder {
+    height: 500px;
+    width: 400px;
+    margin-left: 15px; }
+  main .card-body {
+    height: 255px; }
+
+/*Fin Seccion Main en Index*/
+/*Inicio seccion Footer*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px; }
+
+.div1 {
+  grid-area: 1 / 1 / 5 / 2;
+  display: flex;
+  justify-content: center; }
+
+.div2 {
+  grid-area: 1 / 2 / 5 / 2; }
+  .div2 p {
+    display: flex;
+    justify-content: center; }
+  .div2 ul {
+    display: block;
+    width: 100%;
+    margin-top: 30px; }
+  .div2 li {
+    list-style: none;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  .div2 .telefono {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; }
+
+.div3 {
+  grid-area: 1 / 3 / 5 / 4; }
+  .div3 p {
+    display: flex;
+    justify-content: center; }
+  .div3 ul {
+    display: block;
+    width: 100%;
+    margin-top: 30px; }
+  .div3 li {
+    list-style: none;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  .div3 .horarios {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; }
+
+.div4 {
+  grid-area: 1 / 4 / 5 / 5; }
+  .div4 p {
+    display: flex;
+    justify-content: center; }
+  .div4 ul {
+    display: flex;
+    width: 100%;
+    margin-top: 30px; }
+  .div4 li {
+    list-style: none;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%; }
+  .div4 .img1-footer {
+    transition: all 1s ease-in-out; }
+  .div4 .img1-footer:hover {
+    transform: rotate(360deg); }
+  .div4 .img2-footer {
+    transition: all 1s ease-in-out; }
+  .div4 .img2-footer:hover {
+    transform: rotate(360deg); }
+
+/*Fin de Seccion Footer*/
+/*Seccion Media Queris*/
+@media (max-width: 1050px) {
+  .nav-right-section li a {
+    font-size: 10px; }
+  .barra-navegacion {
+    width: 90%; }
+  .parent {
+    width: 90%; } }
+
+@media (max-width: 775px) {
+  .parent {
+    flex-direction: column; }
+  .div1 ul li {
+    justify-content: center; }
+  .div2 ul li {
+    justify-content: center; }
+  .div3 ul li {
+    justify-content: center; }
+  .div4 ul li {
+    justify-content: center; } }
+
+@media (max-width: 715px) {
+  .nav-right-section {
+    flex-direction: column; }
+    .nav-right-section li {
+      width: 100%; }
+    .nav-right-section a {
+      width: 100%;
+      text-align: right; } }
+
+/*duda de porque el carousel cunado bajo a 715 no ocupa el 100%*/
+@media (max-width: 715px) {
+  .carousel-container {
+    width: 100%; }
+  .aside-placeholder {
+    width: 100%; } }
