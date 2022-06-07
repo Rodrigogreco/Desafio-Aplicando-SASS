@@ -256,3 +256,173 @@ main{
         width: 100%;
     }
 }
+
+/*Empieza Seccion Equipo*/
+.card{
+    max-width: 400px;
+    padding: 0;
+}
+.doctoras-section{
+    .parrafo{
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        align-items: flex-end;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        color: #c9c9c9;
+        
+    }
+    .parrafo1{
+        display: flex;
+    justify-content: center;
+    font-size: 17px;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px; 
+    }
+}
+/*Fin Seccion Equipo*/
+/*Inicia Seccion Especialidades*/
+$color-title-divs: violet;
+$color-sectios-divs: rgb(244, 244, 244);
+
+.section-especialidades{
+    .img-especialidades{
+        display: grid;
+        margin-top: 80px;
+        width: 100%;
+        height: 250px;
+    }
+}
+.section-div1{
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-around; 
+    .Especialidad1{
+        background-color: $color-sectios-divs;
+        height: 400px;
+        width: 320px;  
+        .especialidad1-1 {
+            height: 80px;
+            width: 320px;
+            background-color: $color-title-divs;
+        }
+        .p-especialidad{
+            display: flex;
+            justify-content: center; 
+        }
+    }
+    .Especialidad2{
+        background-color: $color-sectios-divs;
+        height: 400px;
+        width: 320px; 
+        .especialidad2-2 {
+            height: 80px;
+            width: 320px;
+            background-color: $color-title-divs;
+        }
+        .p-especialidad2{
+            display: flex;
+            justify-content: center;  
+        }
+    }
+}
+.section-div2{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+    .especialidad3{
+        background-color: $color-sectios-divs;
+        height: 400px;
+        width: 320px;
+        .especialidad3-3 {
+            height: 80px;
+            width: 320px;
+            background-color: $color-title-divs;
+        }
+        .p-especialidad3{
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    .especialidad4{
+        background-color: $color-sectios-divs;
+        height: 400px;
+        width: 320px;
+        .especialidad4-4 {
+            height: 80px;
+            width: 320px;
+            background-color: $color-title-divs;
+        }
+        .p-especialidad4{
+            display: flex;
+            justify-content: center; 
+        }
+        
+    }
+}
+/*Fin Seccion Especialidades*/
+/*Inicio Seccion Obras Sociales*/
+.box{
+    height: 80px;
+    font-size: x-large;
+    border-radius: 6px;
+    /* lo mantiene centrado al div con lo de abajo */
+    margin: 50px auto; 
+    display: flex;
+    justify-content: center;
+    .p-obrassociales{
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    .p-obrassociales:hover{
+        /* cresca o escale 1.5 veces su tamaño */
+        transform: scale(1.5);   
+    }
+}
+.div-img-ob1 {
+    border-radius: 800px;
+    width: 225px;
+    height: 225px;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 1000px;  
+}
+.div-img-ob2{
+    border-radius: 800px;
+    width: 225px;
+    height: 225px;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 1000px;
+    background-color: white;  
+}
+.div-img-ob3{
+    border-radius: 800px;
+    width: 225px;
+    height: 225px;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 1000px;  
+}
+/* Fin Seccion Obras Sociales */
+/* Inicio Seccion Nosotros */
+.section-nosotros{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+.descripcion-nosotros{
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: 500px;   
+    justify-content: center;
+    .div-nosotros{    
+        max-width: 600px;
+    }
+}
+/* Fin Seccion Nosotros */
+
